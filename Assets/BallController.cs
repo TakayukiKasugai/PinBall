@@ -40,8 +40,7 @@ public class BallController : MonoBehaviour {
 			//GameoverTextにゲームオーバを表示
 			this.gameoverText.GetComponent<Text> ().text = "Game Over";
 		}
-		//点数の更新
-		this.pointText.GetComponent<Text> ().text = point.ToString();
+
 	}
 	void OnCollisionEnter(Collision other) {
 
@@ -56,6 +55,7 @@ public class BallController : MonoBehaviour {
 		} else {//その他
 
 		}
-
+		//点数の更新
+		this.pointText.GetComponent<Text> ().text = point.ToString();
 	}
 }
